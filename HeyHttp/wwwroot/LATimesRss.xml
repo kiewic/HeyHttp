@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" media="screen" href="/LATimes.css"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+    <channel>
+        <title>
+            L.A. Times Tech Blog <!-- Technology -->
+        </title>
+        <link>http://latimesblogs.latimes.com/technology/</link>
+        <description>The business and culture of our digital lives, from the L.A. Times</description>
+        <language>en-US</language>
+        <lastBuildDate>Mon, 18 Jul 2011 10:27:33 -0700</lastBuildDate>
+        <generator>http://www.typepad.com/</generator>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.latimes.com/TheTechnologyBlog" />
+        <feedburner:info uri="thetechnologyblog" />
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+        <item>
+            <title>Amazon.com launches Kindle textbook rentals with up to 80% off</title>
+
+            <link>http://feeds.latimes.com/~r/TheTechnologyBlog/~3/bWxJqDlpBY4/amazoncom-offering-up-to-80-discounts-on-kindle-textbook-rentals.html</link>
+            <guid isPermaLink="false">http://latimesblogs.latimes.com/technology/2011/07/amazoncom-offering-up-to-80-discounts-on-kindle-textbook-rentals.html</guid>
+            <description>
+                Amazon Kindle textbook rental rReader: Amazon.com launched Kindle textbook rentals, promising "tens of thousands of textbooks" at discounts of as much as 80% less than purchase price on Monday.
+
+                Students can rent a textbook for as little as 30 or up to 360 days, with fees differing depending on how long the book is rented, Amazon said in a statement.
+
+                Rentals can be read on Amazon's Kindle eReaders, as well as Kindle apps for Macs and PCs, as well as smartphones and tablet computers running Apple's iOS, Microsoft Windows Phone 7 and Google's Android operating system.
+
+                Once the rental period for a textbook is up, students can choose to either purchase books or rent them again if needed for a period as little as one extra day, the Seattle-based online retailer said.
+            </description>
+            <category>Amazon</category>
+            <category>E-Commerce</category>
+            <category>eBooks</category>
+            <category>eReaders</category>
+
+            <category>Kindle</category>
+            <category>Nathan Olivarez-Giles</category>
+
+            <dc:creator>Nathan Olivarez-Giles</dc:creator>
+            <pubDate>Mon, 18 Jul 2011 10:27:33 -0700</pubDate>
+
+            <feedburner:origLink>http://latimesblogs.latimes.com/technology/2011/07/amazoncom-offering-up-to-80-discounts-on-kindle-textbook-rentals.html</feedburner:origLink>
+        </item>
+    </channel>
+</rss>
+<!-- ph=1 -->

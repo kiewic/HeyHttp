@@ -1,0 +1,74 @@
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+[Bb]in
+[Oo]bj
+
+# mstest test results
+TestResults
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+.builds
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# NuGet Packages Directory
+packages
+
+# Click-Once directory
+publish
+
+# Publish Web Output
+*.Publish.xml
+
+# Windows Store Apps directories
+AppPackages
+Generated Files
+
+# Windows Files
+Thumbs.db
+
+# VS14 Files
+*.sln.ide
+.vs
+
+# Source Depot
+buildchk.dbb
+buildchk.evt
+buildchk.log
+buildchk.prf
+buildchk.trc

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+    <channel>
+        <title>My Podcast</title>
+        <link>http://heyhttp.org/</link>
+        <itunes:author>Juan</itunes:author>
+        <description>You, me and guests talk about the latest tech news and trends.</description> 
+        <itunes:subtitle>You, me and guests talk about the latest tech news and trends.</itunes:subtitle>
+        <itunes:summary>You, me and guests talk about the latest tech news and trends.</itunes:summary>
+        <language>en-us</language>
+        <itunes:new-feed-url>http://heyhttp.org/podcast.xml</itunes:new-feed-url>
+        <itunes:owner>
+            <itunes:name>Juan Bot</itunes:name>
+            <itunes:email>jbot@heyhttp.org</itunes:email>
+        </itunes:owner>
+        <ttl>15</ttl> 
+        <image>
+          <title>My Podcast</title> 
+          <width>144</width> 
+          <height>144</height> 
+          <link>http://heyhttp.org/</link>
+          <url>http://kiewic.com/Content/Home/Icons/AppleTouchIcon144x144.png</url>
+        </image>
+        <itunes:image href="http://kiewic.com/Content/Home/Icons/AppleTouchIcon144x144.png" />
+        <category>News</category>
+        <itunes:category text="Technology" />
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://heyhttp.org/podcast.xml" />
+        <feedburner:info uri="geekwirepodcast" />
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+        <media:thumbnail url="http://kiewic.com/Content/Home/Icons/AppleTouchIcon144x144.png" />
+        <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">News</media:category>
+        <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Talk Radio</media:category>
+        <itunes:explicit>no</itunes:explicit>
+        <feedburner:browserFriendly>
+        </feedburner:browserFriendly>
+        <item>
+            <title>Audio 1</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=1</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=1</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=1" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=1" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:01:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 3</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=2</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=2</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=2" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=2" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:02:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 3</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=3</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=3</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=3" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=3" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:03:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 4</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=4</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=4</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=4" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=4" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:04:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 5</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=5</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=5</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=5" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=5" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:05:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 6</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=6</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=6</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=6" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=6" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:06:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 7</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=7</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=7</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=7" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=7" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:07:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 8</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=8</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=8</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=8" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=8" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:08:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 9</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=9</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=9</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=9" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=9" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:09:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 10</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=10</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=10</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=10" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=10" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:10:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 11</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=11</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=11</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=11" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=11" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:11:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 12</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=12</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=12</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=12" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=12" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:12:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 13</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=13</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=13</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=13" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=13" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:13:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 14</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=14</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=14</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=14" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=14" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:14:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 15</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=15</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=15</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=15" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=15" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:15:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <item>
+            <title>Audio 16</title>
+            <link>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=16</link>
+            <guid>http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=16</guid>
+            <enclosure url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=16" length="13500000" type="audio/mpeg" />
+            <media:content url="http://heyhttp.org/?etag=123ABC&amp;slow=1000&amp;length=50000000&amp;bufferlength=250000&amp;id=16" fileSize="13500000" type="audio/mpeg" />
+            <pubDate>Fri, 26 Jun 2015 01:16:00 -0700</pubDate>
+            <description>The description.</description>
+            <itunes:author>Juan</itunes:author>
+            <itunes:summary>The summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:subtitle>The subtitle.</itunes:subtitle>
+        </item>
+        <media:credit role="author">Kiewic</media:credit>
+        <media:rating>nonadult</media:rating>
+        <media:description type="plain">The description.</media:description>
+    </channel>
+</rss>

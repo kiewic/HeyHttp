@@ -1,0 +1,12 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HeyHttp Test Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <p><a href="/foo.html">Link to the same page.</a> If correctly cached, a request should not be made when clicking the link.</p>
+    <p><a href="/?etag=sdfghjk&slow=20&length=1000000000&bufferlength=1000000&filename=something.txt">Link to attachment.</a> It should promt the 'Save As' dialogue.</p>
+</body>
+</html>
