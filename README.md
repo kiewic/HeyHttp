@@ -6,7 +6,11 @@
 * The simplest HTTPS server.
 * Other networking protocols are also included.
 
-**heyhttp.org** is a public server running multiple instances **HeyHttp**, each with different cofnigurations.
+**heyhttp.org** is a public server running multiple instances **HeyHttp**, each with different configurations, e.g.:
+
+* `http://heyhttp.org/` is a plain HTTP endpoint.
+* `https://heyhttp.org/` is an HTTPS endpoint.
+* `https://heyhttp.org:8080/` is an HTTPS endpoint that requires a client certificate.
 
 > **CAUTION!**  
 > All the servers and clients included in this project are partially implemented.
@@ -44,7 +48,7 @@ You can mix configurations, e.g.:
 * `http://heyhttp.org/?user=foo` to set the expected user name, if user name does not match response status is `401 Unauthorized`.
 * `http://heyhttp.org/?password=bar` to set the expected password, if password does not match response status is `401 Unauthorized`.
 
-It is common to use user and paswword at the same time, e.g.:
+It is common to use user and password options at the same time, e.g.:
 
     http://heyhttp.org/?basic=1&user=foo&password=bar
 
@@ -77,7 +81,7 @@ Features:
 * Press `CTRL + BREAK` to kill the process.
 * Supports `Keep-Alive` connections.
 * Supports `Range` and `Content-Range` headers.
-* It serves files from the file system, e.g., `http://heyhttp.org/bar/foo.txt` returns the fiel at `.\bin\Debug\wwwroot\bar\foo.txt`.
+* It serves files from the file system, e.g., `http://heyhttp.org/bar/foo.txt` returns the file at `.\bin\Debug\wwwroot\bar\foo.txt`.
 * Do you want transport layer logs? Use LogLevel.TransportLayer. Application level logs? Use LogLevel.ApplicationLayer.
 * Dual-mode sockets supported.
 
@@ -126,7 +130,7 @@ Or read other command line options:
 
 The HeyHttp mission is to provide servers and clients for testing, capable of reproduce scenarios that hardly occur in normal conditions using conventional servers and clients.
 
-Everything is written with raw sockets, so it is possible alterate the protocols at any step.
+Everything is written with raw sockets, so it is possible to modify the protocols at any step.
 
 
 ## Other networking protocols included in HeyHttp
@@ -205,4 +209,4 @@ To configure a proxy:
 
 Features:
 
-* Supports SSL connections through HTTP CONNECT Tunnelling.
+* Supports SSL connections through HTTP CONNECT Tunneling.
