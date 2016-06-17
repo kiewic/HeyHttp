@@ -1,4 +1,4 @@
-# What is HeyHttp and heyhttp.org?
+# What are HeyHttp and heyhttp.org?
 
 **HeyHttp** is a .NET C# console application that contains: 
 
@@ -6,7 +6,7 @@
 * The simplest HTTPS server.
 * Other networking protocols are also included.
 
-**heyhttp.org** is a public server running multiple instances **HeyHttp**, each with different configurations, e.g.:
+**heyhttp.org** is a public server running multiple instances of **HeyHttp**, each with different configurations, e.g.:
 
 * `http://heyhttp.org/` is a plain HTTP endpoint.
 * `https://heyhttp.org/` is an HTTPS endpoint.
@@ -17,7 +17,7 @@
 
 ## HTTP Server Features
 
-Some of the things you can try are:
+Some features you can try are:
 
 * `http://heyhttp.org/?delay=5000` to introduce a 5 seconds delay before start sending the response.
 * `http://heyhttp.org/?pause=1` to pause the writing of the response until the ENTER key is pressed.
@@ -26,7 +26,7 @@ Some of the things you can try are:
 * `http://heyhttp.org/?bufferLength=1024` to receive the response in chunks of 1024 bytes.
 * `http://heyhttp.org/?idleLength=2048` to block the response thread until client is disconnected when 'bufferLength * N >= idleLength'.
 
-You can mix configurations, e.g.:
+You can mix options, e.g.:
 
     http://heyhttp.org/?slow=1000&bufferLength=1000&length=1000000
 
