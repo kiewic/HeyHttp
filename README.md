@@ -35,7 +35,7 @@ More options you can also mix:
 * `http://heyhttp.org/?cache=1` to include headers in the response so content can be cached.
 * `http://heyhttp.org/?nocache=1` to include headers in the response that will prevent the content from being cached.
 * `http://heyhttp.org/?chunked=1` to receive a response with chunked transfer coding, i.e., using `Transfer-Encoding: chunked`
-* `http://heyhttp.org/?gzip=1` to receive a response with GZIP coding, i.e, `Transfer-Encoding: gzip`.
+* `http://heyhttp.org/?gzip=1` to receive a response with GZIP coding, i.e., `Transfer-Encoding: gzip`.
 * `http://heyhttp.org/?setcookie=1` to receive a response with multiple `Set-Cookie` headers.
 * `http://heyhttp.org/?etag=1234` to receive a response with an `ETag: 1234` header and an `Accept-Ranges` header.
 * `http://heyhttp.org/?lastModified=1` to receive a response with a `Last-Modified` header and an `Accept-Ranges` header.
