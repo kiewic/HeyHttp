@@ -1,12 +1,12 @@
 # What are HeyHttp and heyhttp.org?
 
-**HeyHttp** is a .NET C# console application that contains: 
+**HeyHttp** is a .NET C# console application that you can use to test your HTTP clients. It consists of: 
 
-* The lightest HTTP server.
-* The simplest HTTPS server.
-* Other networking protocols are also included.
+* A very light HTTP server.
+* A simple HTTPS server.
+* Other networking protocols, such as HTTP CONNECT, WebSocket, and UDP are also included.
 
-**heyhttp.org** is a public server running multiple instances of **HeyHttp**, each with different configurations, e.g.:
+**heyhttp.org** is a public server running multiple instances of **HeyHttp**, each with different configurations, for example:
 
 * `http://heyhttp.org/` is a plain HTTP endpoint.
 * `https://heyhttp.org/` is an HTTPS endpoint.
@@ -19,42 +19,46 @@
 
 Some features you can try are:
 
-* `http://heyhttp.org/?delay=5000` to introduce a 5 seconds delay before start sending the response.
-* `http://heyhttp.org/?pause=1` to pause the writing of the response until the ENTER key is pressed.
-* `http://heyhttp.org/?slow=1000` to receive the response slowly. This configuration sends a package every 1000 milliseconds.
-* `http://heyhttp.org/?length=10240` to receive a 10240 bytes response.
-* `http://heyhttp.org/?bufferLength=1024` to receive the response in chunks of 1024 bytes.
-* `http://heyhttp.org/?idleLength=2048` to block the response thread until client is disconnected when 'bufferLength * N >= idleLength'.
+* `http://heyhttp.org/?delay=5000` to introduce a 5 seconds delay before starting to send a response.
+* `http://heyhttp.org/?pause=1` to pause the writing of a response until the ENTER key is pressed.
+* `http://heyhttp.org/?slow=1000` to receive a response slowly, e.g., this configuration sends a package every 1000 milliseconds.
+* `http://heyhttp.org/?length=10240` to receive a response of 10240 bytes.
+* `http://heyhttp.org/?bufferLength=1024` to receive a response in chunks of 1024 bytes.
+* `http://heyhttp.org/?idleLength=2048` to indefinitely block the response thread until the client is disconnected when `bufferLength * N >= idleLength`.
 
-You can mix options, e.g.:
+You can mix options, for example:
 
     http://heyhttp.org/?slow=1000&bufferLength=1000&length=1000000
 
+More options you can also mix:
+
 * `http://heyhttp.org/?cache=1` to include headers in the response so content can be cached.
-* `http://heyhttp.org/?nocache=1` to include headers in the response so content cannot be cached.
-* `http://heyhttp.org/?chunked=1` to receive a chunked encoded response.
-* `http://heyhttp.org/?gzip=1` to receive a GZIP encoded response.
+* `http://heyhttp.org/?nocache=1` to include headers in the response that will prevent the content from being cached.
+* `http://heyhttp.org/?chunked=1` to receive a response with chunked transfer coding, i.e., using `Transfer-Encoding: chunked`
+* `http://heyhttp.org/?gzip=1` to receive a response with GZIP coding, i.e, `Transfer-Encoding: gzip`.
 * `http://heyhttp.org/?setcookie=1` to receive a response with multiple `Set-Cookie` headers.
-* `http://heyhttp.org/?etag=1234` too receive a response with an `ETag: 1234` header and an `Accept-Ranges` header.
-* `http://heyhttp.org/?lastModified=1` too receive a response with a `Last-Modified` header and an `Accept-Ranges` header.
-* `http://heyhttp.org/?filename=something.txt` to receive a response with a `Content-Disposition: attachment; filename=something.txt`.
-* `http://heyhttp.org/?status=400` to receive a response with a 400 status.
+* `http://heyhttp.org/?etag=1234` to receive a response with an `ETag: 1234` header and an `Accept-Ranges` header.
+* `http://heyhttp.org/?lastModified=1` to receive a response with a `Last-Modified` header and an `Accept-Ranges` header.
+* `http://heyhttp.org/?filename=something.ext` to receive a response with a `Content-Disposition: attachment; filename=something.ext` header, so a client knows the response can be stored in the file system using the suggested name.
+* `http://heyhttp.org/?status=400` to receive a response with a `400 Not Found` status.
 * `http://heyhttp.org/?redirect=http%3A%2F%2Fexample.com` to receive a `301 Moved Permanently` response and a `Location: http://example.com` header.
 * `http://heyhttp.org/?retry=1` to receive a `503 Service Unavailable` response with a `Retry-After: 5` header.
 * `http://heyhttp.org/?basic=1` to receive a `401 Unauthorized` response with a `WWW-Authenticate Basic` header.
 * `http://heyhttp.org/?digest=1` to receive a `401 Unauthorized` response with a `WWW-Authenticate Digest` header.
 * `http://heyhttp.org/?negotiate=1` to receive a `401 Unauthorized` response with a `WWW-Authenticate Negotiate` header.
 * `http://heyhttp.org/?ntlm=1` to receive a `401 Unauthorized` response with a `WWW-Authenticate NTLM` header.
-* `http://heyhttp.org/?user=foo` to set the expected user name, if user name does not match response status is `401 Unauthorized`.
-* `http://heyhttp.org/?password=bar` to set the expected password, if password does not match response status is `401 Unauthorized`.
+* `http://heyhttp.org/?user=foo` to set the expected user name. If the request user name does not match *foo*, the response status is `401 Unauthorized`.
+* `http://heyhttp.org/?password=bar` to set the expected password. If the request password does not match *bar*, the response status is `401 Unauthorized`.
 
-It is common to use user and password options at the same time, e.g.:
+It is common to use user and password options at the same time, for example:
 
     http://heyhttp.org/?basic=1&user=foo&password=bar
 
+Some more possible options:
+
 * `http://heyhttp.org/?name=Foo&value=Bar` to receive a response with a `Foo: Bar` header.
-* `http://heyhttp.org/?custom=1` to add three unknown custom headers.
-* `http://heyhttp.org/?trace=1` to receive the request headers back (as the content of the response).
+* `http://heyhttp.org/?custom=1` to add three random custom headers.
+* `http://heyhttp.org/?trace=1` to receive the request headers back, as the content of the response.
 
 
 ## HeyHttp.exe Features
