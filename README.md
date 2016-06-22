@@ -63,38 +63,38 @@ Some more possible options:
 
 ## HeyHttp.exe Features
 
-To start the HTTP server, run HeyHttp.exe as:
+To start the HTTP server, run HeyHttp.exe in the command prompt as:
 
     HeyHttp.exe http server
 
-To start the HTTPS server run as:
+To start the HTTPS server run the command:
 
     HeyHttp.exe https server
 
-To ask for a client certificate when a response is received run as:
+To ask for a client certificate when a response is received run the command:
 
     HeyHttp.exe https server -ClientCertificate
 
-To select a server certificate run as:
+To select a server certificate run the command (for example):
 
     HeyHttp.exe https server -Thumbprint "07261b17e0d71247b185234335c6126bc2796b6b"
 
-Features:
+More features:
 
 * Press `CTRL + C` to kill all the current connections.
 * Press `CTRL + BREAK` to kill the process.
-* Supports `Keep-Alive` connections.
-* Supports `Range` and `Content-Range` headers.
+* HeyHttp.exe supports `Keep-Alive` connections.
+* HeyHttp.exe supports `Range` and `Content-Range` request headers.
 * It serves files from the file system, e.g., `http://heyhttp.org/bar/foo.txt` returns the file at `.\bin\Debug\wwwroot\bar\foo.txt`.
 * Do you want transport layer logs? Use LogLevel.TransportLayer. Application level logs? Use LogLevel.ApplicationLayer.
-* Dual-mode sockets supported.
+* HeyHttp.exe supports dual-mode sockets.
 
 
 
 ## Why another HTTP server?
 
 1. HeyHttp is written in C#! It is easy for C# developers to modify it and add new features.
-2. HeyHttp is written with raw sockets! Developers can introduce a failure or delay at any point in the protocol stack, e.g., malformed responses.
+2. HeyHttp is written with raw sockets! Developers can introduce failures or delays at any point in the protocol stack, e.g., write a malformed response for diagnostic purposes.
 
 
 ## How to get started?
@@ -107,15 +107,15 @@ Download the binary and run it like this:
 
     HeyHttp.exe http server
 
-Or like this:
+Or, if you want to use it as a client, like this:
 
     HeyHttp.exe http client http://bing.com
 
-Or like this:
+Or, if you want to use it as a TCP server, like this:
 
     HeyHttp.exe tcp server
 
-Or read other command line options:
+Or, if you want to read other command line options, like this:
 
     HeyHttp.exe /?
 
