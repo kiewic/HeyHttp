@@ -16,12 +16,16 @@
     </ProjectFiles>
   </ItemGroup>
 
-  <Target Name="Zip">
+  <Target Name="ZipWithPowerShell5">
     <ItemGroup>
       <ZipFiles Include="HeyHttp\bin\Release\*.*" />
       <ZipFiles Include="HeyHttp\bin\Release\wwwroot" />
     </ItemGroup>
     <Exec Command="PowerShell -command Compress-Archive @(ZipFiles, ',') HeyHttp\bin\Release\HeyHttp.zip" />
+  </Target>
+
+  <Target Name="Zip">
+    <Exec Command="powershell -command Add-Type -A System.IO.Compression.FileSystem;[IO.Compression.ZipFile]::CreateFromDirectory('HeyHttp\bin\Release', 'HeyHttp.zip')" />
   </Target>
 
   <!--
