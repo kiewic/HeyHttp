@@ -25,7 +25,7 @@
   </Target>
 
   <Target Name="Zip">
-    <Exec Command="powershell -command Add-Type -A System.IO.Compression.FileSystem;[IO.Compression.ZipFile]::CreateFromDirectory('HeyHttp\bin\Release', 'HeyHttp.zip')" />
+    <Exec Command="powershell -command Add-Type -A System.IO.Compression.FileSystem;[IO.Compression.ZipFile]::CreateFromDirectory('HeyHttp\bin\Release', 'HeyHttp$(VersionLabel).zip')" />
   </Target>
 
   <!--
