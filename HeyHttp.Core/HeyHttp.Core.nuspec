@@ -6,9 +6,9 @@
     <title>$title$</title>
     <authors>G Stankiewicz</authors>
     <owners>G Stankiewicz</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <licenseUrl>https://github.com/kiewic/heyhttp/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>http://heyhttp.org</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <iconUrl>http://i.imgur.com/gawH9e2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>HeyHttp is a collection of networking servers and clients, including: a very light HTTP server, and a simple HTTPS server.</description>
     <releaseNotes>Initial implementation of HeyHttp servers and clients.</releaseNotes>
