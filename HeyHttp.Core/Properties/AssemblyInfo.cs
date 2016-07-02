@@ -38,3 +38,7 @@ using System.Runtime.InteropServices;
 // is used for the Win32 file version that is displayed on the Version tab of the
 // Windows file properties dialog.
 //[assembly: AssemblyFileVersion("1.0.0.0")]
+
+// If the AssemblyInformationalVersion attribute is available, then that one is used
+// by NuGet.
+[assembly: AssemblyInformationalVersion("2.0.0")]
