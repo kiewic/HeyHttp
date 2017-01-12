@@ -11,6 +11,8 @@
 * `http://heyhttp.org/` is a plain HTTP endpoint.
 * `https://heyhttp.org/` is an HTTPS endpoint.
 * `https://heyhttp.org:8080/` is an HTTPS endpoint that requires a client certificate.
+* `https://heyhttp.org:8081/` is an HTTPS endpoint with an expired certificate  (`NET::ERR_CERT_DATE_INVALID`).
+* `https://foo.heyhttp.org/` is an HTTPS endpoint with a certificate for a different domain name (`ERR_CERT_COMMON_NAME_INVALID`).
 
 > **CAUTION!**  
 > All the servers and clients included in this project are partially implemented.
@@ -59,7 +61,7 @@ Some more possible options:
 * `http://heyhttp.org/?name=Foo&value=Bar` to receive a response with a `Foo: Bar` header.
 * `http://heyhttp.org/?custom=1` to add three random custom headers.
 * `http://heyhttp.org/?trace=1` to receive the request headers back, as the content of the response.
-
+* `https://heyhttp.org/me.json` to recieve a JSON example response.
 
 ## HeyHttp.exe Features
 
