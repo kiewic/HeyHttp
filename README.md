@@ -65,6 +65,8 @@ Some more possible options:
 
 ## HeyHttp.exe Features
 
+<img src="./HeyHttp/wwwroot/screenshot.gif" width="912" alt="Animated screenshot" />
+
 To start the HTTP server, run HeyHttp.exe in the command prompt as:
 
     HeyHttp.exe http server
