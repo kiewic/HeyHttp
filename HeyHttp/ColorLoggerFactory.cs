@@ -5,7 +5,7 @@ namespace HeyHttp
 {
     internal class ColorLoggerFactory : IHeyLoggerFactory
     {
-        public HeyLogger GetLogger()
+        public HeyLogger GetSessionLogger()
         {
             return new ColorLogger();
         }

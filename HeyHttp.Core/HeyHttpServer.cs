@@ -40,7 +40,7 @@ namespace HeyHttp.Core
             {
                 try
                 {
-                    var logger = settings.LoggerFactory.GetLogger();
+                    var logger = GlobalSettings.LoggerFactory.GetSessionLogger();
                     logger.IsBodyLogEnabled = !settings.OnlyHeadersLog;
 
                     TcpClient tcpClient = tcpListener.AcceptTcpClient();

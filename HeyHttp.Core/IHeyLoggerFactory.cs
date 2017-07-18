@@ -2,6 +2,6 @@
 {
     public interface IHeyLoggerFactory
     {
-        HeyLogger GetLogger();
+        HeyLogger GetSessionLogger();
     }
 }

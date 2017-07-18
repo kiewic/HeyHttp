@@ -85,6 +85,17 @@ namespace HeyHttp.Core
             set;
         }
 
+        public Uri Url
+        {
+            get
+            {
+                string uriString = String.Format("{0}://{1}:{2}{3}", Port == 80 ? "http" : "https", Host, Port, PathAndQuery);
+                Uri result;
+                Uri.TryCreate(uriString, UriKind.Absolute, out result);
+                return result;
+            }
+        }
+
         public bool IsKeepAlive
         {
             get

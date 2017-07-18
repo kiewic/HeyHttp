@@ -9,12 +9,10 @@ namespace HeyHttp
 {
     public class SettingsFactory
     {
-        public static HeyHttpServerSettings GetHeyHttpServerSettings(string[] args, IHeyLoggerFactory loggerFactory)
+        public static HeyHttpServerSettings GetHeyHttpServerSettings(string[] args)
         {
             var argsParser = new ArgsParser(args);
             var settings = new HeyHttpServerSettings();
-
-            settings.LoggerFactory = loggerFactory;
 
             argsParser.GetPort(settings, 2, HeyHttpServer.DefaultPort);
 

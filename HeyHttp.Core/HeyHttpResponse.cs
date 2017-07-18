@@ -33,6 +33,19 @@ namespace HeyHttp.Core
             set;
         }
 
+        public string StatusCode
+        {
+            get
+            {
+                var status = Status;
+                if (String.IsNullOrEmpty(status))
+                {
+                    return String.Empty;
+                }
+                return status.Split(new char[] { ' ' }, 2)[0];
+            }
+        }
+
         public List<string> Headers
         {
             get;

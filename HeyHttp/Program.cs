@@ -13,7 +13,8 @@ namespace HeyHttp
         static void Main(string[] args)
         {
             var argsList = args.ToList();
-            var loggerFactory = new ColorLoggerFactory();
+            GlobalSettings.LoggerFactory = new ColorLoggerFactory();
+            GlobalSettings.HttpInsights = new HttpInsights();
 
             if (argsList.Contains("ssl") && argsList.Contains("server"))
             {
@@ -41,7 +42,7 @@ namespace HeyHttp
             }
             else if (argsList.Contains("http") && argsList.Contains("server"))
             {
-                HeyHttpServer.Start(SettingsFactory.GetHeyHttpServerSettings(args, loggerFactory));
+                HeyHttpServer.Start(SettingsFactory.GetHeyHttpServerSettings(args));
             }
             else if (argsList.Contains("http") && argsList.Contains("client"))
             {

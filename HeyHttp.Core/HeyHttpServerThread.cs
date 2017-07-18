@@ -96,20 +96,26 @@ namespace HeyHttp.Core
             keepAlive = true;
             while (keepAlive)
             {
-                using (logFile = new HttpLogFile(clientSocket.RemoteEndPoint, requestsCount + 1))
+                using (var requestTelemetry = GlobalSettings.HttpInsights.StartRequestTelemetry(String.Empty))
                 {
-                    ReadRequestHeaders();
-                    ReadRequestContent();
-
-                    keepAlive = request.IsKeepAlive;
-
-                    HeyHttpResponse response = new HeyHttpResponse(logger)
+                    using (logFile = new HttpLogFile(clientSocket.RemoteEndPoint, requestsCount + 1))
                     {
-                        Status = "200 OK",
-                        IsKeepAlive = request.IsKeepAlive
-                    };
-                    SendResponse(response);
-                    requestsCount++;
+                        ReadRequestHeaders();
+                        ReadRequestContent();
+
+                        keepAlive = request.IsKeepAlive;
+
+                        HeyHttpResponse response = new HeyHttpResponse(logger)
+                        {
+                            Status = "200 OK",
+                            IsKeepAlive = request.IsKeepAlive
+                        };
+                        SendResponse(response);
+                        requestsCount++;
+
+                        requestTelemetry.Url = request.Url;
+                        requestTelemetry.ResponseCode = response.StatusCode;
+                    }
                 }
             }
         }

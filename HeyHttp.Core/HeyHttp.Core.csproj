@@ -45,6 +45,7 @@
     <Compile Include="ApplicationLayerProtocol.cs" />
     <Compile Include="ArgsParser.cs" />
     <Compile Include="ArgsParserElement.cs" />
+    <Compile Include="GlobalSettings.cs" />
     <Compile Include="FakeStream.cs" />
     <Compile Include="HeyHttpAuthentication.cs" />
     <Compile Include="HeyHttpClient.cs" />
@@ -77,6 +78,8 @@
     <Compile Include="IHeyHostnameSettings.cs" />
     <Compile Include="IHeyLoggerFactory.cs" />
     <Compile Include="IHeyPortSettings.cs" />
+    <Compile Include="Insights\IHeyApplicationInsights.cs" />
+    <Compile Include="Insights\IHeyRequestTelemetry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocketClosedTest.cs" />
     <Compile Include="SslClientCertificateInfo.cs" />
