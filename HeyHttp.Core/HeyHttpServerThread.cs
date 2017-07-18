@@ -277,6 +277,8 @@ namespace HeyHttp.Core
                     return "application/rss+xml; charset=UTF-8";
                 case ".json":
                     return "application/json; charset=UTF-8";
+                case ".md":
+                    return "text/markdown";
                 default:
                     return "text/plain; charset=UTF-8";
             }
