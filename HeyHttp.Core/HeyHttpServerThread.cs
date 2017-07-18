@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -125,7 +126,16 @@ namespace HeyHttp.Core
             using (FileStream logFileStream = File.OpenWrite(logFile.FullName))
             {
                 request = new HeyHttpRequest(logger);
+                SetRequestPort(request);
                 request.ReadHeaders(networkStream, logFileStream);
+            }
+        }
+
+        private void SetRequestPort(HeyHttpRequest request)
+        {
+            if (clientSocket.LocalEndPoint is IPEndPoint)
+            {
+                request.Port = (clientSocket.LocalEndPoint as IPEndPoint).Port;
             }
         }
 
