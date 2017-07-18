@@ -51,7 +51,7 @@ namespace HeyHttp.Core
 
         private static void OnAccept(IAsyncResult asyncResult)
         {
-            HeyLogger logger = new HeyLogger();
+            var logger = GlobalSettings.LoggerFactory.GetSessionLogger();
             Socket socketListener = asyncResult.AsyncState as Socket;
             SslStream sslStream = null;
             string clientName = null;

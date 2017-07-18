@@ -33,7 +33,7 @@ namespace HeyHttp
             string thumbprint;
             if (!argsParser.TryGetOptionValue("Thumbprint", out thumbprint))
             {
-                thumbprint = "07261b17e0d71247b185234335c6126bc2796b6b";
+                thumbprint = "c1fd2c54ef2f457f14aa40206118dc2f2a580f5f";
             }
             settings.Thumbprint = thumbprint;
 
