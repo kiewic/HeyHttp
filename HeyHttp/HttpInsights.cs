@@ -17,6 +17,18 @@ namespace HeyHttp
                 this.operationHolder = telemetry.StartOperation<RequestTelemetry>("HttpClientRequest");
             }
 
+            public string Name
+            {
+                get
+                {
+                    return operationHolder.Telemetry.Name;
+                }
+                set
+                {
+                    operationHolder.Telemetry.Name = value;
+                }
+            }
+
             public string ResponseCode
             {
                 get

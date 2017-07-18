@@ -114,6 +114,7 @@ namespace HeyHttp.Core
                         SendResponse(response);
                         requestsCount++;
 
+                        requestTelemetry.Name = request.Method;
                         requestTelemetry.Url = request.Url;
                         requestTelemetry.ResponseCode = response.StatusCode;
                     }
