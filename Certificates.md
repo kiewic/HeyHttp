@@ -21,11 +21,11 @@ Install in the Trusted Root CA store (without private key, but private key is no
 
     certutil -addstore -user root tempRootCa.cer
 
-Install in the Personal/My store (without private key):
+Without `-user`, certificates are installed in *local computer* location instead of *current user* location.
+
+To install in the Personal/My store (without private key), use the `my` option:
 
     certutil -addstore -user my tempRootCa.cer
-
-Without '-user', certificates are installed in 'local computer' location instead of 'current user' location.
 
 Client Certificate
 ==================
@@ -34,14 +34,14 @@ Only create:
 
     makecert -n "CN=tempClientCert" ^
     -ic tempRootCa.cer -iv tempRootCa.pvk -sky signature ^
-    -sv tempClientCert.pvk tempClientCert.cer
+    -eku 1.3.6.1.5.5.7.3.2 -sv tempClientCert.pvk tempClientCert.cer
 
 Create and install:
 
     makecert -n "CN=tempClientCert" ^
     -ic tempRootCa.cer -iv tempRootCa.pvk -sky signature ^
     -sr currentuser -ss my -pe ^
-    -sk MyKeyName
+    -eku 1.3.6.1.5.5.7.3.2 -sk MyKeyName
 
 Arguments:
 
@@ -55,6 +55,7 @@ Arguments:
   capable of signing and enables certificate authentication.
 * -pe specifies that the private key is generated in the certificate and installed with it in the certificate store.
   If the certificate does not have the corresponding private key, it cannot be used for certificate authentication.
+* `-eku 1.3.6.1.5.5.7.3.2` indicates the certificate is intended for client authentication
 
 Source: http://msdn.microsoft.com/en-us/library/ff650751.aspx
 
@@ -123,11 +124,11 @@ Browse Installed Certificates
 
 Use:
 
-    1. For current user certificates execute certmgr.msc
-    2. For local computer certificates execute certlm.msc
+1. For current user certificates execute `certmgr.msc`
+2. For local computer certificates execute `certlm.msc`
 
 Or:
 
-    1. Execute mmc.exe
-    2. Click File > Add/Remove Snap In ... > Certificates > Add > 
-    3. Select User or Computer
+1. Execute mmc.exe
+2. Click File > Add/Remove Snap In ... > Certificates > Add > 
+3. Select User or Computer
