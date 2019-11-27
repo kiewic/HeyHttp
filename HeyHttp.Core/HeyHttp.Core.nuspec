@@ -6,13 +6,18 @@
     <title>$title$</title>
     <authors>G Stankiewicz</authors>
     <owners>G Stankiewicz</owners>
-    <licenseUrl>https://github.com/kiewic/heyhttp/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>http://heyhttp.org</projectUrl>
-    <iconUrl>http://i.imgur.com/gawH9e2.png</iconUrl>
+    <license type='file'>LICENSE.md</license>
+    <icon>icon.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>HeyHttp is a collection of networking servers and clients, including: a very light HTTP server, and a simple HTTPS server.</description>
     <releaseNotes>Initial implementation of HeyHttp servers and clients.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>http https ssl proxy connect server client tcp udp websocket</tags>
   </metadata>
+
+  <files>
+    <file src="..\icon.png" />
+    <file src="..\LICENSE.md" />
+  </files>
 </package>
